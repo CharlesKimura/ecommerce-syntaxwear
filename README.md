@@ -1,2 +1,1 @@
 # ecommerce-syntaxwear
-asd
