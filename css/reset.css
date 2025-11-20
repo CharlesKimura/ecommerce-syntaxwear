@@ -1,13 +1,13 @@
 /* Reset CSS baseado no Andy Bell */
 
-/* Box sizing rules */
+/* Garante que o box-sizing seja border-box para todos os elementos */
 *,
 *::before,
 *::after {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* Remove default margin */
+/* Remove margens padrão dos principais elementos */
 body,
 h1,
 h2,
@@ -20,73 +20,74 @@ figure,
 blockquote,
 dl,
 dd {
-   margin: 0;
+  margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role */
+/* Remove estilos de lista em ul e ol com role list */
 ul[role='list'],
 ol[role='list'] {
-   list-style: none;
+  list-style: none;
 }
 
-/* Set core root defaults */
+/* Ativa rolagem suave ao navegar pelo site */
 html:focus-within {
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
+/* Define padrões básicos para o body */
 body {
-   min-height: 100vh;
-   text-rendering: optimizeSpeed;
-   line-height: 1.5;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
-/* Remove default padding */
+/* Remove padding padrão de listas */
 ul,
 ol {
-   padding: 0;
+  padding: 0;
 }
 
-/* A elements that don't have a class get default styles */
+/* Links sem classe têm estilo padrão melhorado */
 a:not([class]) {
-   text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
+/* remove linha (sublinhado) em baixo */
 a {
    text-decoration: none;
 }
 
-ul {
+/* remove marcadores da lista */
+ul,ol {
    list-style: none;
 }
 
-/* Make images easier to work with */
+/* Imagens ocupam no máximo 100% do espaço e são exibidas como bloco */
 img,
 picture {
-   max-width: 100%;
-   display: block;
+  max-width: 100%;
+  display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
+/* Inputs e botões herdam a fonte do body */
 input,
 button,
 textarea,
 select {
-   font: inherit;
+  font: inherit;
 }
 
-/* Remove all animations and transitions for people that prefer not to see them */
+/* Remove animações e transições para quem prefere menos movimento */
 @media (prefers-reduced-motion: reduce) {
-   html:focus-within {
-      scroll-behavior: auto;
-   }
-
-   *,
-   *::before,
-   *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-   }
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
