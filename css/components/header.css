@@ -1,36 +1,54 @@
 /* header.css */
 .header {
+   /* header flutuando */
    position: fixed;
    top: 20px;
    left: 50%;
+
+   /* centraliza o elemento */
    transform: translateX(-50%);
+
+   /* separa os cantos da tela */
    width: calc(100% - 40px);
    border-radius: 15px;
+
+   /* garante que o header fique acima de outros elementos */
    z-index: 999;
+
+   /* flex com espaço entre os itens e alinhamento central */
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 20px 28px;
+
+   /* espaçamento interno */
+   padding: 12px 20px;
+
+   /* cor do fundo */
    background-color: #fff;
 }
 
-.logo a {
+.logo img {
+   /* autura do logo */
    height: 40px;
 }
 
 .nav-center ul {
-   list-style: none;
+   /* remove marcadores da lista */
    display: flex;
+
+   /* espaçamento entre os itens 40px (projeto) / 16px = 2,5rem */
    gap: 2.5rem;
 }
 
 .nav-center a,
 .nav-right a {
+   /* tamanho da fonte 20px (projeto) / 16px = 1.25rem */
    font-size: 1.25rem;
 }
 
 .nav-center a:hover,
 .nav-right a:hover {
+   /* quando passar o mouse troca a cor */
    color: #7c3ead;
 }
 
@@ -45,5 +63,6 @@
 }
 
 .nav-right a:hover img {
+   /* quando passar o mouse troca a opacidade */
    opacity: 0.7;
 }
