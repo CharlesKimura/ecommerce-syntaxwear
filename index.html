@@ -11,10 +11,10 @@
    <link rel="stylesheet" href="./css/layout.css">
 
    <link rel="stylesheet" href="./css/components/header.css">
+   <link rel="stylesheet" href="./css/components/hero.css">
 </head>
 
 <body>
-   <!-- Cabeçalho do site com logo e navegação -->
    <header class="header">
       <!-- Logo e navegação -->
       <h1 class="logo">
@@ -55,22 +55,37 @@
    </header>
 
    <main>
-      <!-- Seção principal de destaque do site -->
-      <section id="hero" class="hero-section">
-         <!-- Seção hero -->
+      <!-- Seção hero -->
+      <section class="hero-section">
+         <!-- Camada de sobreposição para o conteúdo da seção hero (ajuda na legibilidade do texto sobre a imagem de fundo) -->
+         <div class="hero-overlay">
+            <div class="hero-content">
+               <span class="hero-subtitle">Krypton One</span>
+               <h2 class="hero-title">Transforme qualquer passo em presença.</h2>
+               <div class="hero-buttons">
+                  <!-- botão contorno -->
+                  <a class="btn btn-outline" href="#">Ver modelos</a>
+                  <!-- botão preenchida -->
+                  <a class="btn btn-filled" href="#">Comprar</a>
+               </div>
+            </div>
+         </div>
       </section>
+
       <!-- Seção de categorias de tênis -->
-      <section id="categorias-tenis" class="categories-section">
-         <!-- Seção de categorias de tênis -->
+      <section class="categories-section">
+         
       </section>
+
       <!-- Grid com produtos em destaque -->
-      <section id="produtos-destaque" class="featured-products-grid">
-         <!-- Grid com produtos em destaque -->
+      <section class="featured-products-grid">
+         
       </section>
    </main>
-   <!-- Rodapé com informações de contato e links -->
+
+   <!-- Informações de contato e links -->
    <footer class="site-footer">
-      <!-- Informações de contato e links -->
+      
    </footer>
 </body>
 

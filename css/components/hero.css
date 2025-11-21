@@ -1,1 +1,121 @@
 /* hero.css */
+.hero-section {
+   /* Define a imagem de fundo, centraliza e não a repete */
+   background: url(../../images/banners/hero.jpg) no-repeat center;
+
+   /* cobre e ajusta ao tamanho da tela */
+   background-size: cover;
+   height: 500px;
+   
+   /* Base para posicionar elementos filhos */
+   position: relative;
+}
+
+.hero-overlay {
+   /* ocupa 100% da largura e altura do pai */
+   width: 100%;
+   height: 100%;
+   
+   /* Alinha o conteúdo verticalmente ao centro e horizontalmente ao final (à direita) */
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+
+   /* espaçamento interno 0 cima/baixo e 4rem nas laterais */
+   padding: 0 6rem;
+}
+
+.hero-content {
+   color: #fff;
+   /* tamanho maximo */
+   max-width: 388px;
+
+   /* alinhar texto no centro */
+   text-align: center;
+}
+
+.hero-content .hero-title {
+   /* tamanho da fonte4/16 = 1.5 */
+   font-size: 1.5rem;
+
+   /* margem inferior */
+   margin-bottom: 40px ;
+
+   /* peso da fonte */
+   font-weight: 400;
+
+   /* Altura da linha / Espaçamento entre linhas */
+   line-height: 36px;
+   
+   /* espaço entre letras */
+   letter-spacing: 3px;
+}
+
+.hero-content .hero-subtitle {
+   /* tamanho da fonte 20px (projeto) / 16px = 1.25rem */
+   font-size: 1.25rem;
+
+   /* peso da fonte */
+   font-weight: 400;
+}
+
+.hero-buttons {
+   display: flex;
+
+   /* espaçamento entre os botões */
+   gap: 16px;
+}
+
+.btn {
+   /* tamanho da fonte 20px (projeto) / 16px = 1.25rem */
+   font-size: 1.25rem;
+   
+   /* largura e altura da fonte dos botões */
+   width: 161px;
+   height: 48px;
+
+   /* borda arredondada, cor do texto e peso da fonte */
+   border-radius: 25px;
+   color: #fff;
+   font-weight: 400;
+
+   /* espaçamento interno (texto) da borda */
+   padding: 10px 20px;
+
+   /* Transição suave de 0.3s para background e borda ao passar o mouse */ 
+   transition: background-color 0.3s, border 0.3s;
+}
+
+.btn-outline {
+   /* fundo transparente */
+   background-color: transparent;
+
+   /* borda */
+   border: 2px solid #fff;
+
+   /* ajusta texto no centro */
+   line-height: 23px;
+}
+
+.btn-filled {
+   /* cor de fundo */
+   background-color: #fff;
+
+   /* cor do texto */
+   color: #6329A2;
+
+   /* sem borda */
+   border: none;
+   padding: 10px 44px;
+}
+
+.btn:hover {
+   /* cor de fundo */
+   background-color: #6329A2;
+
+   /* cor do texto */
+   color: #fff;
+
+   /* cor da borda para funcionar com a transição */
+   border-color: #6329A2;
+}

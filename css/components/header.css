@@ -1,6 +1,6 @@
 /* header.css */
 .header {
-   /* header flutuando */
+   /* header flutuante */
    position: fixed;
    top: 20px;
    left: 50%;
@@ -20,16 +20,17 @@
    justify-content: space-between;
    align-items: center;
 
-   /* espaçamento interno */
-   padding: 12px 20px;
+   /* espaçamento interno texto da borda (tamanho do header)  */
+   padding: 0.255rem 0.65rem;
 
    /* cor do fundo */
    background-color: #fff;
 }
 
 .logo img {
-   /* autura do logo */
+   /* autura e largura do logo */
    height: 40px;
+   width: 150px;
 }
 
 .nav-center ul {
@@ -44,6 +45,9 @@
 .nav-right a {
    /* tamanho da fonte 20px (projeto) / 16px = 1.25rem */
    font-size: 1.25rem;
+
+   /* cor do texto */
+   color: #333333;
 }
 
 .nav-center a:hover,
@@ -54,11 +58,14 @@
 
 .nav-right ul {
    display: flex;
+   
+   /* espaçamento entre os itens 40px (projeto) / 16px = 2,5rem */
    gap: 2.5rem;
    align-items: center;
 }
 
 .nav-right img {
+   /* altura dop logo */
    height: 20px;
 }
 
