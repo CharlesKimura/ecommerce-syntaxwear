@@ -27,6 +27,7 @@
 
 .hero-content {
    color: #fff;
+
    /* tamanho maximo */
    max-width: 388px;
 
@@ -35,7 +36,7 @@
 }
 
 .hero-content .hero-title {
-   /* tamanho da fonte4/16 = 1.5 */
+   /* tamanho da fonte 24/16 = 1.5 */
    font-size: 1.5rem;
 
    /* margem inferior */
@@ -44,10 +45,10 @@
    /* peso da fonte */
    font-weight: 400;
 
-   /* Altura da linha / Espaçamento entre linhas */
+   /* Altura da linha */
    line-height: 36px;
    
-   /* espaço entre letras */
+   /* Espaçamento entre linhas */
    letter-spacing: 3px;
 }
 
