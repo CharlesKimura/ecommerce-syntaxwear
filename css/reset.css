@@ -60,6 +60,8 @@ a {
 /* remove marcadores da lista */
 ul,ol {
    list-style: none;
+   padding: 0;
+   margin: 0;
 }
 
 /* Imagens ocupam no máximo 100% do espaço e são exibidas como bloco */
