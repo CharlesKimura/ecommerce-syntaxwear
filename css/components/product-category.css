@@ -1,58 +1,59 @@
-/* product-category.css */
+/* product-category.css - Estilos das categorias de produtos */
+
 .categories-section {
-   background-color: #fff;
-   padding-top: 40px ;
-   padding-bottom: 40px ;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 30px;
+   background-color: #fff; /* Fundo branco para a seção de categorias */
+   padding-top: 40px ; /* Espaço acima da seção */
+   padding-bottom: 40px ; /* Espaço abaixo da seção */
+   display: flex; /* Organiza os cards em linha */
+   flex-wrap: wrap; /* Permite quebra de linha dos cards */
+   justify-content: center; /* Centraliza os cards na tela */
+   gap: 30px; /* Espaço entre os cards */
 }
 
 .category-card {
-   position: relative;
-   width: 317px;
-   height: 500px;
-   border-radius: 15px;
-   overflow: hidden;
+   position: relative; /* Permite posicionar elementos sobrepostos */
+   width: 317px; /* Largura fixa do card */
+   height: 500px; /* Altura fixa do card */
+   border-radius: 15px; /* Bordas arredondadas */
+   overflow: hidden; /* Esconde conteúdo que ultrapassa o card */
 }
 
 .overlay {
-   position: absolute;
-   inset: 0;
-   background-color: rgba(0, 0, 0, 0.25);
-   z-index: 1;
+   position: absolute; /* Sobrepõe o card */
+   inset: 0; /* Ocupa todo o card */
+   background-color: rgba(0, 0, 0, 0.25); /* Fundo escuro translúcido */
+   z-index: 1; /* Fica acima da imagem do card */
 }
 
 .category-name {
-   position: absolute;
+   position: absolute; /* Centraliza o nome na imagem */
    left: 50%;
    top: 50%;
-   transform: translate(-50%, -50%);
-   z-index: 2;
-   text-align: center;
+   transform: translate(-50%, -50%); /* Centralização perfeita */
+   z-index: 2; /* Fica acima do overlay */
+   text-align: center; /* Centraliza o texto */
 }
 
 .casual {
-   background-image: url('../../images/products/casual.png');
-   background-size: cover;
-   background-position: center;
+   background-image: url('../../images/products/casual.png'); /* Imagem da categoria Casual */
+   background-size: cover; /* Cobre todo o card */
+   background-position: center; /* Centraliza a imagem */
 } 
 
 .esporte {
-   background-image: url('../../images/products/esporte.png');
+   background-image: url('../../images/products/esporte.png'); /* Imagem da categoria Esporte */
    background-size: cover;
    background-position: center;
 }
 
 .moderno {
-   background-image: url('../../images/products/moderno.png');
+   background-image: url('../../images/products/moderno.png'); /* Imagem da categoria Moderno */
    background-size: cover;
    background-position: center;
 }
 
 .futurista {
-   background-image: url('../../images/products/futurista.png');
+   background-image: url('../../images/products/futurista.png'); /* Imagem da categoria Futurista */
    background-size: cover;
    background-position: center;
 }

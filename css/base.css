@@ -1,65 +1,41 @@
-/* base.css */
+/* base.css - Estilos base do projeto Syntaxwear */
 body {
-   font-family: var(--fonte-principal);
-   color: #333333;;
+   font-family: var(--fonte-principal); /* Usa a variável de fonte principal */
+   color: #333333; /* Cor padrão do texto */
 }
 
 main {
-   padding: 2.5rem 0 2.5rem;
-   max-width: 1360px;
-   margin: 0 auto;
+   padding: 2.5rem 0 2.5rem; /* Espaçamento superior e inferior */
+   max-width: 1360px; /* Largura máxima do conteúdo principal */
+   margin: 0 auto; /* Centraliza o conteúdo na tela */
 }
 
 .btn {
-   /* tamanho da fonte 20px (projeto) / 16px = 1.25rem */
-   font-size: 1.25rem;
-   
-   /* largura e altura da fonte dos botões */
-   width: 161px;
-   height: 48px;
-
-   /* borda arredondada, cor do texto e peso da fonte */
-   border-radius: 25px;
-   color: #fff;
-   font-weight: 400;
-
-   /* espaçamento interno (texto) da borda */
-   padding: 10px 20px;
-
-   /* Transição suave de 0.3s para background e borda ao passar o mouse */ 
-   transition: background-color 0.3s, border 0.3s;
+   font-size: 1.25rem; /* Tamanho da fonte dos botões */
+   width: 161px; /* Largura do botão */
+   height: 48px; /* Altura do botão */
+   border-radius: 25px; /* Bordas arredondadas */
+   color: #fff; /* Cor do texto do botão */
+   font-weight: 400; /* Peso da fonte */
+   padding: 10px 20px; /* Espaçamento interno do botão */
+   transition: background-color 0.3s, border 0.3s; /* Transição suave ao passar o mouse */
 }
 
 .btn-outline {
-   /* fundo transparente */
-   background-color: transparent;
-
-   /* borda */
-   border: 2px solid #fff;
-
-   /* ajusta texto no centro */
-   line-height: 23px;
+   background-color: transparent; /* Fundo transparente */
+   border: 2px solid #fff; /* Borda branca */
+   line-height: 23px; /* Centraliza o texto verticalmente */
 }
 
 .btn-filled {
-   /* cor de fundo */
-   background-color: #fff;
-
-   /* cor do texto */
-   color: #6329A2;
-
-   /* sem borda */
-   border: none;
-   padding: 10px 44px;
+   background-color: #fff; /* Fundo branco */
+   color: #6329A2; /* Cor do texto roxa */
+   border: none; /* Sem borda */
+   padding: 10px 44px; /* Espaçamento interno maior */
 }
 
 .btn:hover {
-   /* cor de fundo */
-   background-color: #6329A2;
-
-   /* cor do texto */
-   color: #fff;
-
-   /* cor da borda para funcionar com a transição */
-   border-color: #6329A2;
+   background-color: #6329A2; /* Fundo roxo ao passar o mouse */
+   color: #fff; /* Texto branco ao passar o mouse */
+   border-color: #6329A2; /* Borda roxa ao passar o mouse */
 }

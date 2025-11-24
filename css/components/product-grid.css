@@ -1,76 +1,78 @@
-/* product-grid.css */
+/* product-grid.css - Estilos do grid de produtos em destaque */
+
 .card {
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   position: relative;
-   border-radius: 20px;
+   background-position: center; /* Centraliza a imagem de fundo do card */
+   background-size: cover; /* Faz a imagem cobrir todo o card */
+   background-repeat: no-repeat; /* Não repete a imagem de fundo */
+   position: relative; /* Permite posicionar elementos sobrepostos */
+   border-radius: 20px; /* Bordas arredondadas do card */
 }
 
 .produto1 {
-   grid-area: produto1;
-   background-image: url(../../images/products/card_imagem.jpg);
+   
+   grid-area: produto1; /* Define área do grid para o produto 1 */
+   background-image: url(../../images/products/card_imagem.jpg); /* Imagem do produto 1 */
 }
 
 .produto2 {
-   grid-area: produto2;
-   background-image: url(../../images/products/roxo-verde-grid.jpg);
+   grid-area: produto2; /* Define área do grid para o produto 2 */
+   background-image: url(../../images/products/roxo-verde-grid.jpg); /* Imagem do produto 2 */
 }
 
 .produto3 {
-   grid-area: produto3;
-   background-image: url(../../images/products/modelo-feminino.png);
+   grid-area: produto3; /* Define área do grid para o produto 3 */
+   background-image: url(../../images/products/modelo-feminino.png); /* Imagem do produto 3 */
 }
 
 .produto4 {
-   grid-area: produto4;
-   background-image: url(../../images/products/futurista-grid.png);
+   grid-area: produto4; /* Define área do grid para o produto 4 */
+   background-image: url(../../images/products/futurista-grid.png); /* Imagem do produto 4 */
 }
 
 .produto5 {
-   grid-area: produto5;
-   background-image: url(../../images/products/preto-branco-grid.jpg);
+   grid-area: produto5; /* Define área do grid para o produto 5 */
+   background-image: url(../../images/products/preto-branco-grid.jpg); /* Imagem do produto 5 */
 }
 
 .produto6 {
-   grid-area: produto6;
-   background-image: url(../../images/products/moderno-grid.png);
+   grid-area: produto6; /* Define área do grid para o produto 6 */
+   background-image: url(../../images/products/moderno-grid.png); /* Imagem do produto 6 */
 }
 
 .grid-section {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: repeat(3, 300px);
+   display: grid; /* Usa grid para organizar os cards */
+   grid-template-columns: repeat(4, 1fr); /* 4 colunas de tamanho igual */
+   grid-template-rows: repeat(3, 300px); /* 3 linhas de 300px cada */
    grid-template-areas:
       "produto1 produto1 produto2 produto2"
       "produto1 produto1 produto3 produto4"
-      "produto5 produto5 produto3 produto6";
-   gap: 30px;
+      "produto5 produto5 produto3 produto6"; /* Layout das áreas do grid */
+   gap: 30px; /* Espaço entre os cards */
 }
 
 .produto1-content {
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   text-align: center;
+   position: absolute; /* Posiciona o conteúdo sobre o card */
+   left: 50%; /* Centraliza horizontalmente */
+   top: 50%; /* Centraliza verticalmente */
+   transform: translate(-50%, -50%); /* Centralização perfeita */
+   text-align: center; /* Centraliza o texto */
 }
 
 .card-title {
-   font-size: 1.25rem;
-   font-weight: 400;
-   margin-bottom: 10px;
-   color: #ededed;
+   font-size: 1.25rem; /* Tamanho do título do card */
+   font-weight: 400; /* Peso da fonte do título */
+   margin-bottom: 10px; /* Espaço abaixo do título */
+   color: #ededed; /* Cor do título */
 }
 
 .card-subtitle {
-   font-size: 1.5rem;
-   font-weight: 400;
-   margin-bottom: 20px;
-   color: #ededed;
+   font-size: 1.5rem; /* Tamanho do subtítulo do card */
+   font-weight: 400; /* Peso da fonte do subtítulo */
+   margin-bottom: 20px; /* Espaço abaixo do subtítulo */
+   color: #ededed; /* Cor do subtítulo */
 }
 
 .cta-group {
-   display: flex;
-   gap: 10px;
+   display: flex; /* Organiza os botões em linha */
+   gap: 10px; /* Espaço entre os botões */
 }
