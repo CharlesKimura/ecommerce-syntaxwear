@@ -8,7 +8,7 @@
    /* Centraliza horizontalmente */
    transform: translate(-50%);
    /* Ajusta para centralização perfeita */
-   width: 1280px;
+   width: 1260px;
    /* Largura do header, descontando margens laterais */
    border-radius: 15px;
    /* Bordas arredondadas do header */
