@@ -8,7 +8,7 @@
    /* Centraliza horizontalmente */
    transform: translate(-50%);
    /* Ajusta para centralização perfeita */
-   width: calc(100% - 210px);
+   width: 1280px;
    /* Largura do header, descontando margens laterais */
    border-radius: 15px;
    /* Bordas arredondadas do header */
@@ -24,8 +24,6 @@
    /* Espaçamento interno do header */
    background-color: #ffffff;
    /* Cor de fundo branca */
-   max-width: 1320px;
-   /* Largura máxima do header */
 }
 
 .logo img {
@@ -75,9 +73,11 @@
 
 .nav-container {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    width: 100%;
    align-items: center;
+   flex: 1;
+   margin-left: 10rem;
 }
 
 .menu-toggle {
