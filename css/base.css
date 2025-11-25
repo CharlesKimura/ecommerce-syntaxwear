@@ -10,6 +10,12 @@ main {
    margin: 0 auto; /* Centraliza o conteúdo na tela */
 }
 
+@media (max-width:1280px) {
+   main {
+      padding: 0.625rem;
+   }
+}
+
 .btn {
    font-size: 1.25rem; /* Tamanho da fonte dos botões */
    width: 161px; /* Largura do botão */
