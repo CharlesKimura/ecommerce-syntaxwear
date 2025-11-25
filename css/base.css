@@ -1,47 +1,88 @@
 /* base.css - Estilos base do projeto Syntaxwear */
 body {
-   font-family: var(--fonte-principal); /* Usa a variável de fonte principal */
-   color: #333333; /* Cor padrão do texto */
+   /* Usa a variável de fonte principal */
+   font-family: var(--fonte-principal);
+
+   /* Cor padrão do texto */
+   color: #333333;
 }
 
 main {
-   padding: 2.5rem 0 2.5rem; /* Espaçamento superior e inferior */
-   max-width: 1360px; /* Largura máxima do conteúdo principal */
-   margin: 0 auto; /* Centraliza o conteúdo na tela */
+   /* Espaçamento superior e inferior */
+   padding: 2.5rem 0 2.5rem;
+
+   /* Largura máxima do conteúdo principal */
+   max-width: 1360px;
+
+   /* Centraliza o conteúdo na tela */
+   margin: 0 auto;
 }
 
 @media (max-width:1280px) {
    main {
+      /* Espaçamento interno menor para telas menores */
       padding: 0.625rem;
    }
 }
 
 .btn {
-   font-size: 1.25rem; /* Tamanho da fonte dos botões */
-   width: 161px; /* Largura do botão */
-   height: 48px; /* Altura do botão */
-   border-radius: 25px; /* Bordas arredondadas */
-   color: #fff; /* Cor do texto do botão */
-   font-weight: 400; /* Peso da fonte */
-   padding: 10px 20px; /* Espaçamento interno do botão */
-   transition: background-color 0.3s, border 0.3s; /* Transição suave ao passar o mouse */
+   /* Tamanho da fonte dos botões */
+   font-size: 1.25rem;
+
+   /* Largura do botão */
+   width: 161px;
+
+   /* Altura do botão */
+   height: 48px;
+
+   /* Bordas arredondadas */
+   border-radius: 25px;
+
+   /* Cor do texto do botão */
+   color: #fff;
+
+   /* Peso da fonte */
+   font-weight: 400;
+
+   /* Espaçamento interno do botão */
+   padding: 10px 20px;
+
+   /* Transição suave ao passar o mouse */
+   transition: background-color 0.3s, border 0.3s;
 }
 
 .btn-outline {
-   background-color: transparent; /* Fundo transparente */
-   border: 2px solid #fff; /* Borda branca */
-   line-height: 23px; /* Centraliza o texto verticalmente */
+   /* Fundo transparente */
+   background-color: transparent;
+
+   /* Borda branca */
+   border: 2px solid #fff;
+
+   /* Centraliza o texto verticalmente */
+   line-height: 23px;
 }
 
 .btn-filled {
-   background-color: #fff; /* Fundo branco */
-   color: #6329A2; /* Cor do texto roxa */
-   border: none; /* Sem borda */
-   padding: 10px 44px; /* Espaçamento interno maior */
+   /* Fundo branco */
+   background-color: #fff;
+
+   /* Cor do texto roxa */
+   color: #6329A2;
+
+   /* Sem borda */
+   border: none;
+
+   /* Espaçamento interno maior */
+   padding: 10px 44px;
 }
 
 .btn:hover {
-   background-color: #6329A2; /* Fundo roxo ao passar o mouse */
-   color: #fff; /* Texto branco ao passar o mouse */
-   border-color: #6329A2; /* Borda roxa ao passar o mouse */
+   /* Fundo roxo ao passar o mouse */
+   background-color: #6329A2;
+
+   /* Texto branco ao passar o mouse */
+   color: #fff;
+
+   /* Borda roxa ao passar o mouse */
+   border-color: #6329A2;
 }

@@ -1,97 +1,168 @@
 /* product-grid.css - Estilos do grid de produtos em destaque */
 
 .card {
-   background-position: center; /* Centraliza a imagem de fundo do card */
-   background-size: cover; /* Faz a imagem cobrir todo o card */
-   background-repeat: no-repeat; /* Não repete a imagem de fundo */
-   position: relative; /* Permite posicionar elementos sobrepostos */
-   border-radius: 20px; /* Bordas arredondadas do card */
+   /* Centraliza a imagem de fundo do card */
+   background-position: center;
+
+   /* Faz a imagem cobrir todo o card */
+   background-size: cover;
+
+   /* Não repete a imagem de fundo */
+   background-repeat: no-repeat;
+
+   /* Permite posicionar elementos sobrepostos */
+   position: relative;
+
+   /* Bordas arredondadas do card */
+   border-radius: 20px;
 }
 
 .produto1 {
-   
-   grid-area: produto1; /* Define área do grid para o produto 1 */
-   background-image: url(../../images/products/card_imagem.jpg); /* Imagem do produto 1 */
+   /* Define a área do grid para o produto 1 */
+   grid-area: produto1;
+
+   /* Imagem de fundo do produto 1 */
+   background-image: url(../../images/products/card_imagem.jpg);
 }
 
 .produto2 {
-   grid-area: produto2; /* Define área do grid para o produto 2 */
-   background-image: url(../../images/products/roxo-verde-grid.jpg); /* Imagem do produto 2 */
+   /* Define a área do grid para o produto 2 */
+   grid-area: produto2;
+
+   /* Imagem de fundo do produto 2 */
+   background-image: url(../../images/products/roxo-verde-grid.jpg);
 }
 
 .produto3 {
-   grid-area: produto3; /* Define área do grid para o produto 3 */
-   background-image: url(../../images/products/modelo-feminino.png); /* Imagem do produto 3 */
+   /* Define a área do grid para o produto 3 */
+   grid-area: produto3;
+
+   /* Imagem de fundo do produto 3 */
+   background-image: url(../../images/products/modelo-feminino.png);
 }
 
 .produto4 {
-   grid-area: produto4; /* Define área do grid para o produto 4 */
-   background-image: url(../../images/products/futurista-grid.png); /* Imagem do produto 4 */
+   /* Define a área do grid para o produto 4 */
+   grid-area: produto4;
+
+   /* Imagem de fundo do produto 4 */
+   background-image: url(../../images/products/futurista-grid.png);
 }
 
 .produto5 {
-   grid-area: produto5; /* Define área do grid para o produto 5 */
-   background-image: url(../../images/products/preto-branco-grid.jpg); /* Imagem do produto 5 */
+   /* Define a área do grid para o produto 5 */
+   grid-area: produto5;
+
+   /* Imagem de fundo do produto 5 */
+   background-image: url(../../images/products/preto-branco-grid.jpg);
 }
 
 .produto6 {
-   grid-area: produto6; /* Define área do grid para o produto 6 */
-   background-image: url(../../images/products/moderno-grid.png); /* Imagem do produto 6 */
+   /* Define a área do grid para o produto 6 */
+   grid-area: produto6;
+
+   /* Imagem de fundo do produto 6 */
+   background-image: url(../../images/products/moderno-grid.png);
 }
 
 .grid-section {
-   display: grid; /* Usa grid para organizar os cards */
-   grid-template-columns: repeat(4, 1fr); /* 4 colunas de tamanho igual */
-   grid-template-rows: repeat(3, 300px); /* 3 linhas de 300px cada */
+   /* Ativa o layout de grid */
+   display: grid;
+
+   /* Define 4 colunas de largura igual */
+   grid-template-columns: repeat(4, 1fr);
+
+   /* Define 3 linhas com 300px de altura cada */
+   grid-template-rows: repeat(3, 300px);
+
+   /* Define o layout das áreas do grid */
    grid-template-areas:
       "produto1 produto1 produto2 produto2"
       "produto1 produto1 produto3 produto4"
-      "produto5 produto5 produto3 produto6"; /* Layout das áreas do grid */
-   gap: 30px; /* Espaço entre os cards */
+      "produto5 produto5 produto3 produto6";
+
+   /* Espaçamento entre os cards */
+   gap: 30px;
 }
 
 .produto1-content {
-   position: absolute; /* Posiciona o conteúdo sobre o card */
-   left: 50%; /* Centraliza horizontalmente */
-   top: 50%; /* Centraliza verticalmente */
-   transform: translate(-50%, -50%); /* Centralização perfeita */
-   text-align: center; /* Centraliza o texto */
+   /* Posicionamento absoluto para centralização */
+   position: absolute;
+
+   /* Move 50% da esquerda para a direita */
+   left: 50%;
+
+   /* Move 50% de cima para baixo */
+   top: 50%;
+
+   /* Ajusta a posição para centralizar perfeitamente */
+   transform: translate(-50%, -50%);
+
+   /* Centraliza o texto */
+   text-align: center;
 }
 
 .card-title {
-   font-size: 1.25rem; /* Tamanho do título do card */
-   font-weight: 400; /* Peso da fonte do título */
-   margin-bottom: 10px; /* Espaço abaixo do título */
-   color: #ededed; /* Cor do título */
+   /* Tamanho da fonte do título */
+   font-size: 1.25rem;
+
+   /* Peso da fonte do título */
+   font-weight: 400;
+
+   /* Espaço abaixo do título */
+   margin-bottom: 10px;
+
+   /* Cor do título */
+   color: #ededed;
 }
 
 .card-subtitle {
-   font-size: 1.5rem; /* Tamanho do subtítulo do card */
-   font-weight: 400; /* Peso da fonte do subtítulo */
-   margin-bottom: 20px; /* Espaço abaixo do subtítulo */
-   color: #ededed; /* Cor do subtítulo */
+   /* Tamanho da fonte do subtítulo */
+   font-size: 1.5rem;
+
+   /* Peso da fonte do subtítulo */
+   font-weight: 400;
+
+   /* Espaço abaixo do subtítulo */
+   margin-bottom: 20px;
+
+   /* Cor do subtítulo */
+   color: #ededed;
 }
 
 .cta-group {
-   display: flex; /* Organiza os botões em linha */
-   gap: 10px; /* Espaço entre os botões */
+   /* Organiza os botões em linha */
+   display: flex;
+
+   /* Espaço entre os botões */
+   gap: 10px;
 }
 
 @media (max-width:768px) {
    .grid-section {
+      /* Altera para 2 colunas */
       grid-template-columns: 1fr 1fr;
+
+      /* Define 5 linhas com altura automática */
       grid-template-rows: repeat(5, auto);
+
+      /* Reorganiza o layout das áreas para telas menores */
       grid-template-areas: 
       "produto1 produto1"
       "produto5 produto5"
       "produto3 produto4"
       "produto3 produto6"
       "produto2 produto2";
+
+      /* Largura máxima total */
       max-width: 100%;
+
+      /* Reduz o espaçamento entre os cards */
       gap: 0.625rem;
    }
    
    .produto1 {
+      /* Altura mínima para o produto 1 */
       min-height: 500px;
    }
 
@@ -99,10 +170,12 @@
    .produto4,
    .produto6,
    .produto2 {
+      /* Altura mínima para os outros produtos */
       min-height: 190px;
    }
 
    .produto3 {
+      /* Altura mínima para o produto 3 */
       min-height: 370px;
    }
 }

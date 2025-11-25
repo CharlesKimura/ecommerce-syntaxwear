@@ -1,104 +1,174 @@
 /* footer.css - Estilos do rodapé do site */
 
 .site-footer {
-   background-color: #333; /* Cor de fundo escura para o rodapé */
-   color: #fff; /* Texto branco para contraste */
+   /* Cor de fundo escura para o rodapé */
+   background-color: #333;
+
+   /* Texto branco para contraste */
+   color: #fff;
 }
 
 .footer-content {
-   max-width: 1360px; /* Limita a largura máxima do conteúdo */
-   margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
-   padding: 40px; /* Espaçamento interno do rodapé */
-   display: flex; /* Usa flexbox para organizar as áreas */
-   justify-content: space-between; /* Espaço entre os blocos do rodapé */
+   /* Limita a largura máxima do conteúdo */
+   max-width: 1360px;
+
+   /* Centraliza o conteúdo horizontalmente */
+   margin: 0 auto;
+
+   /* Espaçamento interno do rodapé */
+   padding: 40px;
+
+   /* Usa flexbox para organizar as áreas */
+   display: flex;
+
+   /* Espaço entre os blocos do rodapé */
+   justify-content: space-between;
 }
 
 .footer-right {
-   display: flex; /* Organiza os itens em coluna */
-   flex-direction: column; /* Direção vertical */
-   gap: 3.125rem; /* Espaço entre os itens da coluna */
+   /* Organiza os itens em coluna */
+   display: flex;
+
+   /* Define a direção dos itens como vertical */
+   flex-direction: column;
+
+   /* Espaço entre os itens da coluna */
+   gap: 3.125rem;
 }
 
 .footer-nav ul {
-   display: flex; /* Organiza os menus em linha */
-   gap: 1.25rem; /* Espaço entre os menus principais */
+   /* Organiza os menus em linha */
+   display: flex;
+
+   /* Espaço entre os menus principais */
+   gap: 1.25rem;
 }
 
 .footer-nav ul ul {
-   display: flex; /* Submenus em coluna */
-   flex-direction: column; /* Direção vertical */
-   gap: 1rem; /* Espaço entre os itens do submenu */
+   /* Organiza os submenus em coluna */
+   display: flex;
+
+   /* Define a direção dos itens como vertical */
+   flex-direction: column;
+
+   /* Espaço entre os itens do submenu */
+   gap: 1rem;
 }
 
 .footer-nav strong {
-   color: #ededed; /* Cor do título do menu */
-   font-size: 1.25rem; /* Tamanho do título */
-   margin-bottom: 16px; /* Espaço abaixo do título */
-   display: block; /* Ocupa linha inteira */
-   font-weight: 400; /* Peso da fonte normal */
+   /* Cor do título do menu */
+   color: #ededed;
+
+   /* Tamanho da fonte do título */
+   font-size: 1.25rem;
+
+   /* Espaço abaixo do título */
+   margin-bottom: 16px;
+
+   /* Faz o elemento ocupar toda a linha */
+   display: block;
+
+   /* Peso da fonte normal */
+   font-weight: 400;
 }
 
 .footer-nav li a {
-   color: #fff; /* Cor dos links do rodapé */
-   font-size: 16px; /* Tamanho dos links */
+   /* Cor dos links do rodapé */
+   color: #fff;
+
+   /* Tamanho da fonte dos links */
+   font-size: 16px;
 }
 
 .footer-nav li a:hover {
-   text-decoration: underline; /* Sublinhar ao passar o mouse */
+   /* Adiciona sublinhado ao passar o mouse */
+   text-decoration: underline;
 }
 
 /* Estilos do formulário de newsletter no rodapé */
 .newsletter-form {
-   display: flex; /* Organiza os campos em coluna */
-   flex-direction: column; /* Direção vertical dos campos */
+   /* Organiza os campos em coluna */
+   display: flex;
+
+   /* Define a direção dos campos como vertical */
+   flex-direction: column;
 }
 
 .newsletter-form input {
-   border-radius: 30px; /* Bordas arredondadas do input */
-   color: #AAA; /* Cor do texto do input */
-   padding: 12px 20px; /* Espaçamento interno do input */
-   width: 344px; /* Largura fixa do input */
+   /* Bordas arredondadas do input */
+   border-radius: 30px;
+
+   /* Cor do texto do placeholder do input */
+   color: #AAA;
+
+   /* Espaçamento interno do input */
+   padding: 12px 20px;
+
+   /* Largura fixa do input */
+   width: 344px;
 }
 
 /* Estilos das redes sociais no rodapé */
 .footer-social span {
-   margin-bottom: 16px; /* Espaço abaixo do título das redes sociais */
-   display: block; /* Ocupa linha inteira */
+   /* Espaço abaixo do título das redes sociais */
+   margin-bottom: 16px;
+
+   /* Faz o elemento ocupar toda a linha */
+   display: block;
 }
 
 .footer-social ul {
-   display: flex; /* Organiza os ícones em linha */
-   gap: 1.25rem; /* Espaço entre os ícones */
+   /* Organiza os ícones em linha */
+   display: flex;
+
+   /* Espaço entre os ícones */
+   gap: 1.25rem;
 }
 
 .footer-social li a:hover img {
-   opacity: 0.7; /* Ícone fica mais transparente ao passar o mouse */
+   /* Reduz a opacidade do ícone ao passar o mouse */
+   opacity: 0.7;
 }
 
 /* Estilo do texto de copyright no rodapé */
 .footer-copy {
-   font-size: 1.25rem; /* Tamanho do texto de copyright */
-   text-align: center; /* Centraliza o texto */
-   padding: 20px 0; /* Espaço acima e abaixo do texto */
+   /* Tamanho do texto de copyright */
+   font-size: 1.25rem;
+
+   /* Centraliza o texto */
+   text-align: center;
+
+   /* Espaço acima e abaixo do texto */
+   padding: 20px 0;
 }
 
 @media (max-width:1000px) {
    .footer-content {
+      /* Altera a direção do conteúdo para coluna */
       flex-direction: column;
+
+      /* Espaçamento entre os elementos */
       gap: 2rem 1rem;
    }
 
    .footer-nav ul {
+      /* Altera a direção da navegação para coluna */
       flex-direction: column;
+
+      /* Espaçamento entre os itens da lista */
       gap: 2rem;
    }
 
    .footer-social ul {
+      /* Espaçamento entre os ícones sociais */
       gap: 1rem;
    }
 
    .footer-copy {
+      /* Reduz o tamanho da fonte do copyright */
       font-size: 1rem;
+
+      /* Ajusta o espaçamento interno */
       padding: 1.5rem 0 1.5rem;
    }
 }

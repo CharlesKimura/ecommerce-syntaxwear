@@ -1,152 +1,233 @@
 /* header.css - Estilos do cabeçalho do site */
 .header {
+   /* Posição fixa no topo */
    position: fixed;
-   /* Header flutuante, fixo no topo */
-   top: 60px;
+
    /* Distância do topo da página */
-   left: 50%;
+   top: 60px;
+
    /* Centraliza horizontalmente */
+   left: 50%;
+
+   /* Ajusta para centralização horizontal perfeita */
    transform: translate(-50%);
-   /* Ajusta para centralização perfeita */
+
+   /* Largura do cabeçalho */
    width: 1260px;
-   /* Largura do header, descontando margens laterais */
+
+   /* Bordas arredondadas */
    border-radius: 15px;
-   /* Bordas arredondadas do header */
+
+   /* Garante que o cabeçalho fique sobre outros elementos */
    z-index: 999;
-   /* Garante que o header fique acima dos outros elementos */
+
+   /* Usa flexbox para alinhar os itens */
    display: flex;
-   /* Usa flexbox para organizar os itens */
+
+   /* Distribui o espaço entre os itens */
    justify-content: space-between;
-   /* Espaço entre os itens do header */
-   align-items: center;
+
    /* Alinha os itens verticalmente ao centro */
+   align-items: center;
+
+   /* Espaçamento interno */
    padding: 0.265rem 1.25rem;
-   /* Espaçamento interno do header */
-   background-color: #ffffff;
+
    /* Cor de fundo branca */
+   background-color: #ffffff;
 }
 
 .logo img {
+   /* Altura da imagem do logo */
    height: 40px;
-   /* Altura do logo */
 }
 
 .nav-center ul {
-   display: flex;
    /* Organiza os itens do menu em linha */
-   gap: 2.5rem;
+   display: flex;
+
    /* Espaço entre os itens do menu */
+   gap: 2.5rem;
 }
 
 .nav-center a,
 .nav-right a {
+   /* Tamanho da fonte dos links */
    font-size: 1.25rem;
-   /* Tamanho da fonte dos links do menu */
-   color: #333333;
+
    /* Cor do texto dos links */
+   color: #333333;
 }
 
 .nav-center a:hover,
 .nav-right a:hover {
-   color: #7c3aed;
    /* Cor do texto ao passar o mouse */
+   color: #7c3aed;
 }
 
 .nav-right ul {
-   display: flex;
    /* Organiza os ícones em linha */
-   gap: 2.5rem;
+   display: flex;
+
    /* Espaço entre os ícones */
-   align-items: center;
+   gap: 2.5rem;
+   
    /* Alinha os ícones verticalmente ao centro */
+   align-items: center;
 }
 
 .nav-right img {
+   /* Altura dos ícones */
    height: 20px;
-   /* Altura dos ícones do menu à direita */
 }
 
 .nav-right a:hover img {
+   /* Reduz a opacidade do ícone ao passar o mouse */
    opacity: 0.7;
-   /* Ícone fica mais transparente ao passar o mouse */
 }
 
 .nav-container {
+   /* Organiza os elementos em linha */
    display: flex;
+
+   /* Distribui o espaço entre os elementos */
    justify-content: space-between;
+
+   /* Largura total */
    width: 100%;
+
+   /* Alinha os itens verticalmente ao centro */
    align-items: center;
+
+   /* Ocupa o espaço flexível disponível */
    flex: 1;
+
+   /* Margem à esquerda */
    margin-left: 10rem;
 }
 
 .menu-toggle {
+   /* Oculta o checkbox do menu */
    display: none;
 }
 
 .menu-icon {
+   /* Largura do ícone */
    width: 30px;
+
+   /* Altura do ícone */
    height: 30px;
+
+   /* Oculta o ícone por padrão */
    display: none;
+
+   /* Muda o cursor para ponteiro */
    cursor: pointer;
+
+   /* Garante que o ícone fique acima do menu */
    z-index: 1001;
 }
 
 .menu-icon img {
+   /* Largura total da imagem */
    width: 100%;
+
+   /* Altura total da imagem */
    height: 100%;
+
+   /* Animação suave na mudança de opacidade */
    transition: opacity 0.3s ease;
 }
 
 .menu-icon:hover img {
+   /* Reduz a opacidade da imagem ao passar o mouse */
    opacity: 0.7;
 }
 
 @media (max-width: 1280px) {
    .header {
+      /* Ajusta a largura para telas menores */
       width: calc(100% - 40px);
    }
 
    .menu-icon {
+      /* Exibe o ícone do menu */
       display: block;
    }
 
    .nav-container {
+      /* Posição fixa */
       position: fixed;
+
+      /* Alinhado ao topo */
       top: 0;
+
+      /* Escondido fora da tela à direita */
       right: -100%;
+
+      /* Largura do contêiner de navegação */
       width: 200px;
+
+      /* Itens em coluna */
       flex-direction: column;
+
+      /* Espaçamento interno */
       padding: 80px 20px 20px;
+
+      /* Fundo branco */
       background-color: #ffffff;
+
+      /* Espaçamento entre os itens */
       gap: 2rem;
+
+      /* Animação de transição para a direita */
       transition: right 0.3s ease;
+
+      /* Alinha os itens ao início */
       align-items: flex-start;
    }
 
    .nav-center,
    .nav-right {
+      /* Largura total */
       width: 100%;
+
+      /* Alinha o texto ao centro */
       text-align: center;
    }
 
    .nav-center ul,
    .nav-right ul {
+      /* Itens em coluna */
       flex-direction: column;
+
+      /* Espaçamento entre os itens */
       gap: 1.5rem;
+
+      /* Largura total */
       width: 100%;
    }
 
    .nav-center a,
    .nav-right a {
+      /* Largura total */
       width: 100%;
+
+      /* Borda inferior para separar os links */
       border-bottom: 1px solid #eeeeee;
+
+      /* Espaçamento interno vertical */
       padding: 0.3rem 0;
+
+      /* Tamanho da fonte */
       font-size: 1rem;
+
+      /* Trata o link como um bloco */
       display: block;
    }
 
    .menu-toggle:checked ~ .nav-container {
+      /* Move o menu para a tela quando o checkbox está marcado */
       right: 0;
    }
 }

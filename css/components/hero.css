@@ -1,98 +1,119 @@
-/* hero.css */
+/* hero.css - Estilos da seção principal (hero) */
 .hero-section {
-   /* Define a imagem de fundo, centraliza e não a repete */
+   /* Define a imagem de fundo, sua posição e repetição */
    background: url(../../images/banners/hero.jpg) no-repeat center;
 
-   /* cobre e ajusta ao tamanho da tela */
+   /* Faz a imagem de fundo cobrir toda a área da seção */
    background-size: cover;
+
+   /* Altura da seção */
    height: 500px;
    
-   /* Base para posicionar elementos filhos */
+   /* Define o posicionamento relativo para elementos filhos */
    position: relative;
 
+   /* Bordas arredondadas */
    border-radius: 20px;
 }
 
 .hero-overlay {
-   /* ocupa 100% da largura e altura do pai */
+   /* Largura total */
    width: 100%;
+
+   /* Altura total */
    height: 100%;
    
-   /* Alinha o conteúdo verticalmente ao centro e horizontalmente ao final (à direita) */
+   /* Usa flexbox para alinhar o conteúdo */
    display: flex;
+
+   /* Alinha o conteúdo verticalmente ao centro */
    align-items: center;
+
+   /* Alinha o conteúdo horizontalmente à direita */
    justify-content: flex-end;
 
-   /* espaçamento interno 0 cima/baixo e 4rem nas laterais */
+   /* Espaçamento interno (sem espaçamento vertical, 6rem horizontal) */
    padding: 0 6rem;
 }
 
 .hero-content {
+   /* Cor do texto branca */
    color: #fff;
 
-   /* tamanho maximo */
+   /* Largura máxima do conteúdo */
    max-width: 388px;
 
-   /* alinhar texto no centro */
+   /* Alinhamento de texto centralizado */
    text-align: center;
 }
 
 .hero-buttons {
+   /* Organiza os botões em linha */
    display: flex;
 
-   /* espaçamento entre os botões */
+   /* Espaçamento entre os botões */
    gap: 16px;
 }
 
 .hero-content .hero-title {
-   /* tamanho da fonte 24/16 = 1.5 */
+   /* Tamanho da fonte do título */
    font-size: 1.5rem;
 
-   /* margem inferior */
+   /* Margem inferior */
    margin-bottom: 40px ;
 
-   /* peso da fonte */
+   /* Peso da fonte */
    font-weight: 400;
 
    /* Altura da linha */
    line-height: 36px;
    
-   /* Espaçamento entre linhas */
+   /* Espaçamento entre as letras */
    letter-spacing: 3px;
 }
 
 .hero-content .hero-subtitle {
-   /* tamanho da fonte 20px (projeto) / 16px = 1.25rem */
+   /* Tamanho da fonte do subtítulo */
    font-size: 1.25rem;
 
-   /* peso da fonte */
+   /* Peso da fonte */
    font-weight: 400;
 }
 
 @media (max-width:768px) {
    .hero-section {
+      /* Aumenta a altura da seção em telas menores */
       height: 660px;
+
+      /* Altera a imagem de fundo para a versão mobile */
       background-image: url(../../images/banners/hero-mobile.jpg);
    }
 
    .hero-overlay {
+      /* Remove o espaçamento interno em telas menores */
       padding: 0;
    }
 
    .hero-content .hero-title {
+      /* Mantém o tamanho da fonte do título */
       font-size: 1.5rem;
    }
 
    .hero-content .hero-subtitle {
+      /* Mantém o tamanho da fonte do subtítulo */
       font-size: 1.25rem;
    }
 
    .hero-content {
+      /* Reduz a largura máxima do conteúdo */
       max-width: 330px;
+
+      /* Centraliza o conteúdo na horizontal */
       margin: 0 auto;
    }
 
    .btn {
+      /* Reduz o tamanho da fonte dos botões */
       font-size: 1.2rem;
    }
 }
